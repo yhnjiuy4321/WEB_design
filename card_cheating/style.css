@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #007979;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    padding-bottom: 15px;
+    padding-top:15px ;
+    text-align: right;
+    width: 100%;  /* 确保宽度占满 */
+    display: inline-block;
+
+}
+
+
+.word {
+
+    display: inline;
+    margin-left:15px;
+    margin-right: 40px;
+    margin-top: 20px;
+    color: white;
+    font-size: 12.5px;
+    font-family: Microsoft JhengHei, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 1;
+
+}
+
+.word:hover {
+    color: #ffd500; /* 悬停时的文字颜色变为黄色 */
+    text-decoration: underline; /* 悬停时加下划线 */
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+
+.photo1{
+    height: 100%;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+.photo2{
+    height: 100%;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.container{
+    margin: auto;
+    max-width: 75%;
+    height: 600px;
+    padding: 16px;
+}
+.subtitle{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #007979;
+    font-weight: 700;
+    border-bottom: 1px solid #007979;
+}
+
+.ul{
+    display: flex;
+}
+
+.item{
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+
+
+}
+
+.item li {
+    display: inline-block;
+    color: #2f2f2f;
+    letter-spacing: .5px;
+    line-height: 1.87rem;
+    vertical-align: top;
+    width: 10rem;
+
+}
+
+.hr{
+
+}
+
+.password-container {
+
+    position: relative; /* 用于定位内部的按钮 */
+    width:300%; /* 可根据需要调整宽度 */
+    height: 40px;
+
+}
+
+
+input[type="password"] {
+
+    width:100%;
+    height: 100%;
+    padding-right: 60px; /* 留出按钮空间 */
+    box-sizing: border-box; /* 包括 padding 在内的宽度计算方式 */
+
+
+}
+
+.toggle-password {
+    position: absolute;
+    right: 0; /* 定位到容器的最右侧 */
+    top: 0; /* 顶部对齐 */
+    height: 100%; /* 与输入框同高 */
+    border: none; /* 无边框 */
+    background-color: transparent; /* 透明背景 */
+    cursor: pointer; /* 鼠标指针形状 */
+
+
+
+}
+img{
+    width: 65%;
+}
+
+.btmButton{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+
+
+}
+.btn-dark{
+    margin-bottom: .8rem;
+    width: 142px;
+    height: 50px;
+    font-size: .98rem;
+    letter-spacing: .5px;
+    display: inline-block;
+    background-color: #007979;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: 4px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color:#007979 ;
+    color: #ffffff;
+}
+.btn-light{
+    margin-bottom:.8rem;
+    width: 142px;
+    height: 50px;
+    font-size: .98rem;
+    letter-spacing: .5px;
+    display: inline-block;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: 4px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color:#007979 ;
+    color: #007979;
+}
+footer{
+    width: 100%;
+    background-color: #007979;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    padding: 16px;
+    font-size: 12px;
+
+}
+footer ul{
+    padding: 0;
+    margin: 0;
+}
+
+footer li{
+    display: inline-block;
+    margin: 0px .5rem;
+    font-size: 12px;}
+
+.box{
+    width: 100%;
+
+}

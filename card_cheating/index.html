@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>繳費網</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+<header class="sticky-header">
+        <img src="imgs/02.png" class="photo2">
+        <img src="imgs/01.png" class="photo1">
+        <div class="word">繳費專區</div>
+        <div class="word">金融友善服務</div>
+        <div class="word">合作發卡銀行</div>
+        <div class="word">金融服務專區</div>
+        <div class="word">公告訊息</div>
+        <div class="word">學校/社區登入</div>
+</header>
+<div class="container">
+    <div class="subtitle">停車費</div>
+    <div class="box">
+        <ul class="item">
+            <li>繳費項目：</li>
+            <li>台中市路邊停車費</li>
+        </ul>
+        <ul class="item">
+            <li>車號：</li>
+            <li>ABC-1234</li>
+        </ul>
+        <ul class="item">
+            <li>車種：</li>
+            <li>機車</li>
+        </ul>
+        <ul class="item">
+            <li>筆數：</li>
+            <li>1</li>
+        </ul>
+        <ul class="item">
+            <li>金額：</li>
+            <li>400</li>
+        </ul>
+        <hr>
+            <ul class="item">
+                <li>繳費方式：</li>
+                <li>信用卡/簽帳金融卡</li>
+            </ul>
+            <div>
+                <ul class="item">
+                    <li>信用卡號：</li>
+                    <li class="input">
+                        <div class="password-container">
+                            <input type="password" id="creditCardNum" maxlength="16">
+                            <button onclick="togglePassword()" id="togglePassword" class="toggle-password">
+                                <img src="imgs/eye-hide.svg" id="eyeIcon">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="item">
+                <li>信用卡有效年月：</li>
+                <li class="input">
+                    <div class="password-container">
+                        <input type="password" id="MonthYears" placeholder="MMYY" maxlength="4">
+                    </div>
+                </li>
+                </ul>
+                <ul class="item">
+                    <li>卡片背面末3碼：</li>
+                    <li class="input" >
+                        <div class="password-container">
+                            <input type="password" id="last3num" maxlength="3">
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+    </div>
+    <section class="btmButton">
+        <button class=" btn-light">修改</button>
+        <button class=" btn-dark">下一步</button>
+    </section>
+</div>
+<footer>
+    建議瀏覽器版本：Chrome 50 或 Firefox 52 以上 © 中國信託 版權所有
+    <ul>
+        <li><a class="&">智能客服</a></li>
+        |
+        <li><a class="&">隱私權政策</a></li>
+        |
+        <li><a class="&">個人資料運用告知事項</a></li>
+
+    </ul>
+</footer>
+
+<!-- 模擬內容，讓頁面足夠長以滾動<div style="height: 2000px;"></div> -->
+
+
+
+</body>
+</html>
