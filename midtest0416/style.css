@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    /*border-box可以讓padding與border限制於容器內*/
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+.row {
+    display: flex;/*設置為使用 Flexbox 佈局，這表示其子元素將根據彈性容器的大小和方向進行排列*/
+    flex-wrap: wrap;/*換行*/
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+}
+
+.rounded-image {
+    border-radius: 3%; /* 使圖片成為圓形 */
+    /* 或者使用具體的像素值或百分比來定義圓角大小 */
+    /* border-radius: 10px; */
+
+}
+
+.box{
+    margin: 2px;
+    position: relative;
+    padding:5px;
+    cursor: pointer;
+
+
+}
+.column img {
+
+    vertical-align: middle;/*用於指定元素內容的垂直對齊方式*/
+    width: 100%;/*使元素的寬度擴展到其父元素的整個寬度。*/
+    margin-bottom: 35px;
+
+
+}
+@media (max-width: 800px) {
+    .column {
+        flex: 33%;
+        max-width: 33%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 400px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.over {
+    position: absolute;
+    top: 0; /* top、bottom、left、right用於將元素的位置固定在其父元素的四個邊緣上，從而填滿整個父元素 */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgba(115, 183, 255, 0.5);
+    border-radius: 3%;
+    z-index: -1
+}
+
+.box:hover .over {
+    opacity: 1;
+}
+
+.counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;/*將元素移置中心線*/
+    transform: translateX(-50%);/*將元素自身的一半寬度向左移動，從而使元素的中心點正確對齊容器的中心點*/
+    font-size: 20px;
+    color: #000000;
+}
+
+
+
