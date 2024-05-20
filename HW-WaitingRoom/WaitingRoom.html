@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Vinyl&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <title>Firefox Waiting Room</title>
+    <style>
+        body {
+            margin: 10px auto;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 10px;
+            content:"";
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-repeat: no-repeat;
+            background-image: url("foxBG.jpg");
+            background-size: 1280px 700px; ;
+        }
+
+
+        h1 {
+            font-size: 40px;
+            color: #333;
+            wprd-spacing:4px ;
+            white-space: nowrap;
+            font-family: "Tilt Prism", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 80vh;
+            font-style: normal;
+            font-variation-settings:
+                    "XROT" 0,
+                    "YROT" 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+            word-spacing:4px ;
+            white-space: nowrap;
+            font-family: "Rubik Vinyl", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        @media screen and (max-width: 755px) {
+
+
+            h1 {
+                white-space: normal;
+                overflow: visible;
+                text-overflow: clip;
+            }
+        }
+
+
+        @media screen and (max-width: 450px) {
+            .break-after-some-text::after {
+                content: "\A"; /* 插入分段符號 */
+                white-space: pre; /* 使用 pre 選擇器以保留換行 */
+            }
+
+            p {
+                font-size: 20px;
+
+            }
+        }
+
+        .hidden-text {
+            display: none; /* 隱藏文字 */
+        }
+
+        @media screen and (max-width: 600px) {
+            /* 視口寬度小於 600px 時 */
+            .hidden-text {
+                display: block; /* 顯示文字 */
+                font-size: 15px;
+                font-family: "Ranga", cursive;
+                font-weight: bold;
+                font-style: normal;
+                position: fixed;
+                bottom: 0; /* 與底部的距離為 0 */
+                color: saddlebrown;
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>FireFox is temporarily unresponsive</h1>
+    <p>Let's wait <span class="break-after-some-text">together</span>  with the little fox. </p>
+    <p>Try pressing F5 to reconnect.</p>
+    <p class="hidden-text">Extand the page to search for the little fox -------> </p>
+</div>
+</body>
+</html>
