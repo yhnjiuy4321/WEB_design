@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label for="file">downloading progress:</label>
+<progress id="file" value="99" max="100"></progress>
+<button id="load">click me</button>
+
+<script>
+
+    let i=0;
+    function move() {
+        let element= document.getElementById("file");
+
+        function frame(){
+            i++;
+            element.value=i;
+
+        }
+
+        setInterval(frame,100);
+
+    }
+
+document.getElementById("load").addEventListener("click")
+</script>
+
+</body>
+</html>
