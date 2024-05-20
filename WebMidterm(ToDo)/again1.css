@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.todo-container h1 {
+    text-align: center;
+}
+.todo-container ul{
+    padding-right: 20px;
+
+}
+
+.todo-container input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.todo-container button {
+    padding: 10px 20px;
+}
+
+.todo-item {
+    margin-bottom: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.todo-item button {
+    margin-left: 10px;
+
+}

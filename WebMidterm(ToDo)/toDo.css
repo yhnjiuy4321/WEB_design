@@ -1,0 +1,66 @@
+body {
+    background-image: linear-gradient(to right, #e3d1d1, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main{
+    margin: 10px;
+    justify-content:center ;
+}
+
+.word{
+    font-size: 50px;
+    text-align: center;
+    color: azure;
+    margin: 50px auto;
+}
+
+.container{
+
+    text-align: center;
+}
+
+.bu{
+    font-size: 25px;
+    background-color: cornflowerblue;
+}
+
+.listToDo{
+    text-align: center;
+    color: azure;
+    padding: 0;
+    list-style-type:none;
+    lighting-color: transparent;
+    background-color:transparent;
+    width: 200px;
+    margin: auto;
+}
+
+.st_li{
+    width: auto;
+    font-size: 30px;
+    margin: auto;
+    justify-content: center;
+}
+
+.st_span{
+    display: inline;
+    width: 350px;
+    margin: auto;
+    justify-content: center;
+}
+
+.output{
+background-color: transparent;
+}
+
+.word1 {
+
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.word2{
+    font-size: 30px;
+    color: crimson;
+    background-color: transparent;
+}
