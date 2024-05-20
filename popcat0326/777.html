@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>POPCAT CLASSIC</title>
+    <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails"><!--seo讓搜尋優化-->
+    <meta name="description" content="put your description"><!--seo讓搜尋優化-->
+    <meta charset="UTF-8"><!--文件編碼-->
+
+    <meta name="msapplication-TileColor" content="#b721ff">
+
+    <!--ios可以看到-->
+    <meta name="theme-color" content="#b721ff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+
+    <style>
+        html { height:100%; overflow:hidden; }
+        body {
+            height:100%;
+            margin:0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #bdaa90;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            position:relative;
+            overflow:hidden;
+        }
+        body::before{
+            content:"";
+            position:absolute;
+            width:120%;height:120%;
+            top:50%;left:50%;
+            z-index:-1;
+            transform:translate(-50%,-50%) rotate(-3deg);
+            background-image: url("imgs/bg.jpg");
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+
+        .title {
+            margin:0 0 0 0;
+            width: min(1000px,100%);
+
+        <!--調整標題大小與比例 -->
+
+        }
+
+
+        .cat-img {
+            height:0;
+            flex-grow:1;
+            width:100%;
+            max-width: 800px;
+            background-position: bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            touch-action: manipulation;
+            text-align: center;
+            color:white;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: black;
+            font-weight:400;
+            font-size:80px;
+            font-family: "Finger Paint", sans-serif;
+            word-wrap: break-word;
+        }
+        @media(min-width:1000px) {
+            .title {
+                width: min(400px,80%);
+            }
+            .cat-img {
+                font-size: 60px;
+                -webkit-text-stroke-width: 1.5px;
+            }
+        }
+        #p { background-image: url("imgs/p.png"); }
+        #op { background-image: url("imgs/op.png"); }
+    </style>
+</head>
+
+<body>
+
+<img class="title" src="imgs/popcat.svg" alt="POPCAT">
+<!--src路徑，alt文字取代圖片-->
+
+<div class="cat-img" id="p"></div>
+<!--div 容器，class如同印章，可多處蓋印，id是獨一無二的-->
+
+<script>
+   let pop_count=0;
+   //pop_count=pop_count+1;
+   pop_count++;
+   pop_count++;
+   console.log(pop_count);
+
+   console.log(0==false);
+   console.log(0===false);
+
+function showname(){
+    console.log("hi");
+}
+   showname();
+
+
+function openpopcat(){
+    pop_count++;
+
+}
+   console.log(pop_count);
+
+var q =  function open_popcat(){
+       pop_count++;
+
+
+   }
+   console.log(q);
+
+cat=document.getElementById("p");
+let  open_popcat = function(){
+    pop_count++;
+    cat.innerHTML=pop_count;
+    pop_audio= new Audio("pops/pop1.map")
+    pop_audio.load()
+    pop_audio.play()
+       cat.id="op";
+   }
+let close_popcat=function (){
+    cat.id="p";
+
+}
+
+function asynclose(){ //延遲close
+    setTimeout(close_popcat,100)
+}
+
+document.addEventListener("keydown",open_popcat );
+document.addEventListener("pointerdown",open_popcat );
+document.addEventListener("keyup",asynclose );
+document.addEventListener("pointerup",asynclose );
+
+   window.setTimeout(function(){ // 此為回呼函式
+       // 兩秒後，【背景子程式】喚醒【主程式】，執行此程式
+       alert("兩秒後執行");
+   },7000);
+
+   // 主程式設定排程後，立刻往下執行
+   alert("立刻被呼叫");
+
+   //主程式結束，暫時沒事做
+
+
+//cat.style.background
+
+
+</script>
+</body>
+</html>
