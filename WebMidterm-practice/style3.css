@@ -1,0 +1,61 @@
+.center {
+    text-align: center;
+
+}
+
+.big-box {
+    display: flex;
+    justify-content: center; /* 水平置中對齊 */
+    flex-wrap: wrap; /* 换行 */
+    max-width: 1400px;
+    margin: auto; /* 容器水平居中 */
+}
+
+.containerPlus{
+
+    float: left;
+    width:auto;
+    height: auto;
+}
+
+.containerPlus img{
+
+
+}
+
+
+.container {
+    position: relative;
+    width: 200px; /* 让容器的寬度自我調整 */
+    height: auto ;/* 让容器的高度自我調整 */
+    margin-top:5px;
+    margin-bottom:5px ;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+
+}
+
+.size {
+    flex:auto; /* 让图片在 flex 容器中不拉伸，保持原始大小 */
+    width: 200px; /* 设置图片的最大宽度为容器的宽度 */
+    height: auto ;/* 设置图片的最大高度为容器的高度 */
+    vertical-align: bottom;/* 消除圖片底部的多餘白色 */
+
+}
+
+.over {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width:100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgba(57,57,57,0.5);
+}
+
+.container:hover .over {
+    opacity: 1;
+}

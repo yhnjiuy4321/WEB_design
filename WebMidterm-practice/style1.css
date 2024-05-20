@@ -1,0 +1,50 @@
+.center {
+    text-align: center;
+    margin: 2px;
+    border-style:dashed;
+
+}
+
+.image-box{
+
+    display: flex;
+    justify-content: center; /* 水平置中對齊 */
+    flex-wrap: wrap; /* 允許換行 */
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.container {
+
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin:3px;
+
+}
+
+.size{
+    height: 300px;
+    width: 200px;
+
+}
+
+.over {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgba(57,57,57,0.5);
+
+}
+
+.container:hover .over {
+    opacity: 1;
+
+}

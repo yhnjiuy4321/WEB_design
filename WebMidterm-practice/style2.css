@@ -1,0 +1,44 @@
+.center {
+    text-align: center;
+
+}
+
+.image-box {
+    display: flex;
+    justify-content: left; /* 水平置中对齐 */
+    flex-wrap: wrap; /* 允许换行 */
+    max-width: 1400px;
+    margin: auto; /* 让容器水平居中 */
+}
+
+.container {
+    position: relative;
+    width: auto; /* 让容器的宽度自适应 */
+    height: 200px ;/* 让容器的高度自适应 */
+    margin:3px;
+
+}
+
+.size {
+    flex: 0 0 auto; /* 让图片在 flex 容器中不拉伸，保持原始大小 */
+    width: auto; /* 设置图片的最大宽度为容器的宽度 */
+    height: 200px ;/* 设置图片的最大高度为容器的高度 */
+
+}
+
+.over {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width:100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgba(57,57,57,0.5);
+}
+
+.container:hover .over {
+    opacity: 1;
+}
